@@ -17,7 +17,7 @@ services:
             interval: 2s
             timeout: 20s
             retries: 5
-    application:
+    lsq-take-home-app:
         restart: on-failure
         build: ./
         expose:
