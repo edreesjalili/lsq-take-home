@@ -18,10 +18,10 @@ public class InvoicePayment {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = true)
+    @Column(nullable = true, name = "payment_date")
     private java.sql.Date paymentDate;
 
-    @Column(nullable = true)
+    @Column(nullable = true, name = "payment_amount")
     private BigDecimal amount;
 
     @ManyToOne

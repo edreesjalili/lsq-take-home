@@ -3,7 +3,6 @@ package com.jalili.lsqtakehome.csv;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 // making everything public for the sake of speed
@@ -18,7 +17,7 @@ public class Entry {
 
     private Entry() {};
 
-    public static Entry valueOf(List<String> row) {
+    public static Entry from(List<String> row) {
         int i = 0;
         Entry e = new Entry();
         String rawValue;
